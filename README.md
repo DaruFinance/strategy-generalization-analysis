@@ -76,6 +76,31 @@ MyRun/
 
 Each `.txt` file holds the per-window IS/OOS metrics. The `trade_list/` subfolder holds the raw trade log used for equity curve and drawdown calculations.
 
+## Try It in 60 Seconds
+
+No strategy data? Use the included sample data to verify the script runs end-to-end:
+
+```python
+# In strategy-generalization-analysis.py, set:
+root_dir = "examples/sample_strategy_output"
+EXPECTED_WINDOWS = 6
+SELECT_TEST_NUMBER = 3   # IS+ENT + OOS + OOS+ENT funnel (eligible)
+ENABLE_PLOTS = False     # skip plots for a quick run
+META_MODE = False
+```
+
+```bash
+python strategy-generalization-analysis.py
+```
+
+The TEST ID MAPPING will print immediately. After the file walk, per-pipeline stats print and (if `SELECT_TEST_NUMBER` matches an eligible test with passing strategies) an Excel file is written to `examples/sample_strategy_output/`.
+
+> The sample folder contains 2 strategies with `IS+ENT` / `OOS+ENT` lines, so robustness-funnel tests are eligible. With only 2 strategies the portfolio sheet will be sparse — this is expected. Use your real data for meaningful results.
+
+See [`examples/expected_outputs/`](examples/expected_outputs/) for a description of the output format.
+
+---
+
 ## Quick Start
 
 ### Step 1 — Point to your strategies folder
@@ -183,6 +208,17 @@ The exported Excel file (`selected_pipeline_test_N_strategies.xlsx`) contains:
 | `TradeList_AllWindows` | Trade-list stats across all windows |
 | `TradeList_LiveOnly` | Trade-list stats for live proxy windows only |
 | `Portfolios` | Sampled portfolio combinations with live stats |
+
+## Empirical Results
+
+The [`results/`](results/) folder contains META sliding-window results from two real datasets:
+
+| Dataset | WFO Windows | Sliding Runs | Key Finding |
+|---------|-------------|--------------|-------------|
+| DOGE/USDT 30m | 18 | 13 | 99–100% portfolio profitability in strong regimes; collapses to 8.9% in adversarial run. LB–profitability correlation ≈ 0.96. |
+| BTC/USDT 30m | 24 | 19 | Strong runs 1–3 (99–100%), extended adversarial period runs 4–13 (20–42%), recovery run 15 hits 100% at +90.2% avg return. |
+
+Full tables and charts: [`results/meta_results.md`](results/meta_results.md)
 
 ## Disclaimer
 

@@ -1,0 +1,29 @@
+W01 IS   PF: 1.52  ROI: $841  Trades: 77  Win: 58.4%
+W01 OOS  PF: 1.33  ROI: $312  Trades: 33  Win: 57.6%
+W01 IS+ENT  PF: 1.41  ROI: $698  Trades: 77  Win: 57.1%
+W01 OOS+ENT PF: 1.27  ROI: $265  Trades: 33  Win: 54.5%
+
+W02 IS   PF: 1.38  ROI: $619  Trades: 82  Win: 56.1%
+W02 OOS  PF: 1.22  ROI: $247  Trades: 36  Win: 55.6%
+W02 IS+ENT  PF: 1.29  ROI: $512  Trades: 82  Win: 54.9%
+W02 OOS+ENT PF: 1.17  ROI: $201  Trades: 36  Win: 52.8%
+
+W03 IS   PF: 1.17  ROI: $298  Trades: 89  Win: 52.8%
+W03 OOS  PF: 1.04  ROI: $52   Trades: 37  Win: 51.4%
+W03 IS+ENT  PF: 1.11  ROI: $241  Trades: 89  Win: 51.7%
+W03 OOS+ENT PF: 1.01  ROI: $14   Trades: 37  Win: 51.4%
+
+W04 IS   PF: 0.94  ROI: $-88  Trades: 74  Win: 47.3%
+W04 OOS  PF: 0.87  ROI: $-143 Trades: 32  Win: 43.8%
+W04 IS+ENT  PF: 0.91  ROI: $-112 Trades: 74  Win: 45.9%
+W04 OOS+ENT PF: 0.84  ROI: $-168 Trades: 32  Win: 43.8%
+
+W05 IS   PF: 1.43  ROI: $688  Trades: 85  Win: 56.5%
+W05 OOS  PF: 1.28  ROI: $301  Trades: 38  Win: 55.3%
+W05 IS+ENT  PF: 1.34  ROI: $571  Trades: 85  Win: 55.3%
+W05 OOS+ENT PF: 1.21  ROI: $248  Trades: 38  Win: 52.6%
+
+W06 IS   PF: 1.61  ROI: $934  Trades: 79  Win: 60.8%
+W06 OOS  PF: 1.39  ROI: $428  Trades: 34  Win: 58.8%
+W06 IS+ENT  PF: 1.49  ROI: $811  Trades: 79  Win: 59.5%
+W06 OOS+ENT PF: 1.31  ROI: $374  Trades: 34  Win: 55.9%
